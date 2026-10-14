@@ -1,0 +1,41 @@
+body {
+    font-family: 'Edu QLD Hand', cursive;
+    background-color: #001266;
+    color: #BB9C3E
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Libre Caslon Condensed", serif;
+    color: #BB9C3E;
+    font-size: 40pt;
+}
+
+Header {
+    text-align: center;
+    background-color: #001266;
+    color: #BB9C3E;
+}
+
+#hero, footer {
+    text-align: center;
+    font-weight: bold;
+    background-color: #7387e6;
+    padding: 30px;
+    color: #002966;
+    border: 10px solid #BB9C3E;
+}
+
+#hero img {
+    width: 450px;
+    height: 450px;
+}
+
+#bio {
+    text-align: center;
+    font-size: 19pt;
+}
