@@ -41,10 +41,19 @@ Header {
     box-shadow: 0px 0px 10px #BB9C3E;
     box-sizing: border-box;
     border-radius: 10px;
-    
+
 
 }
-
+#article {
+    text-align: center;
+    font-weight: bold;
+    background-color: #7387e6;
+    padding: 30px;
+    color: #002966;
+    border: 10px solid #BB9C3E;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
 #hero,
 footer {
     text-align: center;
