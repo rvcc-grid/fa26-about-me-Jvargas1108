@@ -25,16 +25,28 @@ Header {
     text-align: left;
     font-weight: bold;
     color: #BB9C3E;
-    
+
 }
 
-#list{
+#list {
     font-size: 15pt;
     font-weight: 500;
     color: #BB9C3E;
 }
 
-#hero, footer {
+.gallery-container img {
+    margin: 0 auto;
+    padding: 20px;
+    border: 15px solid #BB9C3E;
+    box-shadow: 0px 0px 10px #BB9C3E;
+    box-sizing: border-box;
+    border-radius: 10px;
+    
+
+}
+
+#hero,
+footer {
     text-align: center;
     font-weight: bold;
     background-color: #7387e6;
