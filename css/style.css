@@ -21,6 +21,19 @@ Header {
     color: #BB9C3E;
 }
 
+#interests {
+    text-align: left;
+    font-weight: bold;
+    color: #BB9C3E;
+    
+}
+
+#list{
+    font-size: 15pt;
+    font-weight: 500;
+    color: #BB9C3E;
+}
+
 #hero, footer {
     text-align: center;
     font-weight: bold;
