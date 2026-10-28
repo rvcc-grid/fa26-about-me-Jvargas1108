@@ -78,13 +78,40 @@ footer {
         display: grid;
         grid-template-columns: 2fr 1fr;
         align-items: center;
-   }
-   .gallery-container figcaption {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;   
-    margin: 1rem;
-   }
+    }
+
+    .gallery-container figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    #article {
+        max-width: 100%;
+        columns: 40rem;
+        text-align: justify;
+    }
+
+    #article p:nth-child(n+2)::first-letter {
+        font-weight: bold;
+    }
 }
-/* test save */
+
+@media screen and (min-width: 100em) {
+    .gallery-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        ;
+
+    }
+
+    .gallery-container figure {
+        display: block;
+    }
+
+    section hr {
+        display: none;
+    }
+}
