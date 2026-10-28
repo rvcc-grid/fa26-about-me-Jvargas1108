@@ -15,16 +15,24 @@ h6 {
     font-size: 40pt;
 }
 
-Header {
+header {
     text-align: center;
     background-color: #001266;
     color: #BB9C3E;
+}
+
+
+#interests H2 {
+    margin: 1px 0;
 }
 
 #interests {
     text-align: left;
     font-weight: bold;
     color: #BB9C3E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -44,6 +52,7 @@ Header {
 
 
 }
+
 #article {
     text-align: center;
     font-weight: bold;
@@ -54,6 +63,7 @@ Header {
     border-radius: 10px;
     margin-bottom: 20px;
 }
+
 #hero,
 footer {
     text-align: center;
@@ -72,4 +82,19 @@ footer {
 #bio {
     text-align: center;
     font-size: 19pt;
+}
+
+@media screen and (min-width: 60em) {
+    .gallery-container figure {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+   }
+   .gallery-container figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;   
+    margin: 1rem;
+   }
 }
