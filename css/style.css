@@ -12,27 +12,48 @@ h5,
 h6 {
     font-family: "Libre Caslon Condensed", serif;
     color: #BB9C3E;
-    font-size: 40pt;
+    font-size: 50pt;
 }
 
 header {
     text-align: center;
-    background-color: #001266;
+    background: linear-gradient(to bottom, #001266, #7387e6);
     color: #BB9C3E;
+    border-radius: 10px;
 }
 
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
 
-#interests H2 {
-    margin: 1px 0;
 }
 
-#interests {
-    text-align: left;
-    font-weight: bold;
-    color: #BB9C3E;
+#interests,
+#video {
+    flex: 1;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#interests h2,
+#video h2 {
+    font-size: 35pt;
+    text-align: center;
+    margin: 0;
+}
+#video iframe {
+    aspect-ratio: 16/9;
+    height: auto;
+    width: 70%;
+    border: 6px solid #BB9C3E;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #BB9C3E;
 
 }
 
@@ -44,12 +65,14 @@ header {
 
 .gallery-container img {
     margin: 0 auto;
-    padding: 20px;
-    border: 15px solid #BB9C3E;
+    padding: 10px;
+    border: 6px solid #BB9C3E;
     box-shadow: 0px 0px 10px #BB9C3E;
     box-sizing: border-box;
     border-radius: 10px;
-
+    width: 100%;
+    max-width: 400px;
+    height: 450px;
 
 }
 
@@ -57,10 +80,11 @@ header {
 footer {
     text-align: center;
     font-weight: bold;
-    background-color: #7387e6;
+    background: linear-gradient(to bottom, #7387e6, #002966);
     padding: 30px;
-    color: #002966;
+    color: #FFFFFF;
     border: 10px solid #BB9C3E;
+    border-radius: 10px;
 }
 
 #hero img {
@@ -74,10 +98,10 @@ footer {
 }
 
 @media screen and (min-width: 60em) {
+
+
     .gallery-container figure {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        align-items: center;
+        text-align: center;
     }
 
     .gallery-container figcaption {
@@ -91,19 +115,22 @@ footer {
     #article {
         max-width: 100%;
         columns: 40rem;
-        text-align: justify;
+        text-align: left;
+        font-size: 1rem;
     }
 
     #article p:nth-child(n+2)::first-letter {
         font-weight: bold;
+        font-size: 1.2rem;
     }
 }
 
 @media screen and (min-width: 100em) {
     .gallery-container {
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
         grid-template-columns: 1fr 1fr 1fr;
-        ;
+        gap: 20px;
 
     }
 
