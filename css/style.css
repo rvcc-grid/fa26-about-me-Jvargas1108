@@ -47,6 +47,7 @@ header {
     text-align: center;
     margin: 0;
 }
+
 #video iframe {
     aspect-ratio: 16/9;
     height: auto;
@@ -123,6 +124,38 @@ footer {
         font-weight: bold;
         font-size: 1.2rem;
     }
+    #contact fieldset {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 10px;
+    align-items: center;
+    padding: 30px;
+    border: none;
+}
+
+#contact p {
+    text-align: right;
+    margin: 0;
+}
+
+#contact ul {
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#contact label{
+    margin:0;
+    text-align: right;
+}
+
+#contact button[type="submit"] {
+    width: auto;
+    justify-self: start;
+    padding: 12px 40px;
+}
 }
 
 @media screen and (min-width: 100em) {
@@ -141,4 +174,15 @@ footer {
     section hr {
         display: none;
     }
+
+#contact {
+    max-width: 900px;
 }
+
+#contact fieldset {
+    padding: 40px;
+    gap: 20px;
+}
+
+}
+
