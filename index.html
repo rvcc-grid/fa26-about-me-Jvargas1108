@@ -55,13 +55,13 @@
         </section>
 
         <section id="video">
-        <h2>Showcase of Midterm Project</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/lfj008kB2bY?si=r1fO-Ky54H3ge4bp"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h2>Showcase of Midterm Project</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lfj008kB2bY?si=r1fO-Ky54H3ge4bp"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <section>
+            <section>
     </div>
 
     <h2>Gallery</h2>
@@ -108,10 +108,63 @@
         </div>
     </section>
 
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form method="post" action="https://api.web3forms.com/submit">
+            <input type="hidden" name="access_key" value="13f3b38b-37c6-4833-a41a-784a393cb4b6">
+            <input type="hidden" name="subject" value="New message from my About Me page">
+            <input type="hidden" name="redirect" value="https://rvcc-grid.github.io/your-repo-name/thanks.html">
+            <fieldset>
+                <legend>
+                    Contact Form
+                </legend>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="phone-type">Phone Type:</label>
+                <select id="phone-type" name="phone-type">
+                    <option value="">Select a phone type</option>
+                    <option value="mobile">Mobile</option>
+                    <option value="home">Home</option>
+                    <option value="work">Work</option>
+
+                </select>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <p> Would You Like A Follow Up? </p>
+                <ul>
+                    <li>
+                        <input type="radio" id="yes" name="followup" value="yes">
+                        <label for="yes">Yes</label>
+
+                    </li>
+                    <li>
+                        <input type="radio" id="no" name="followup" value="no>
+                        <label for="no">No</label>
+                    </li>
+                </ul>
+
+                <div data-class="h-captcha" data-captcha="true"></div>
+
+                <button type="submit">Send</button>
+            </fieldset>
+        </form>
+
+    </section>
+
     <footer>
         &copy; 2026 Joshua Vargas Murillo
 
     </footer>
+
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 
 </body>
 
