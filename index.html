@@ -12,15 +12,27 @@
         rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/nav.css" rel="navsheet">
 
 </head>
 
 <body>
 
     <header>
-        <!-- when I try to add an address for my img, it gives me a error when trying to load my orgiami. For some reason I can't input img/bob.svg---->
-        <img src="img/bob.svg" alt="blue origami bird">
-        <h1> Web Dev I</h1>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/bob.svg" class="log-img" alt="blue origami bird" />
+                <h1 class="logo-title"> Web Dev I - Online! </h1>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#bio" class="nav-links">Bio</a></li>
+                    <li><a href="#statue" class="nav-links">Gallery</a></li>
+                    <li><a href="#article" class="nav-links">Article</a></li>
+                    <li><a href="#contact" class="nav-links">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -113,7 +125,8 @@
         <form method="post" action="https://api.web3forms.com/submit">
             <input type="hidden" name="access_key" value="637a3a87-c9d5-4b40-a520-ba8d17bf033f">
             <input type="hidden" name="subject" value="New message from my About Me page">
-            <input type="hidden" name="redirect" value="https://rvcc-grid.github.io/fa26-about-me-Jvargas1108/thanks.html">
+            <input type="hidden" name="redirect"
+                value="https://rvcc-grid.github.io/fa26-about-me-Jvargas1108/thanks.html">
 
             <fieldset>
                 <legend>
