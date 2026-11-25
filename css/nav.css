@@ -5,15 +5,22 @@ html {
     
 }
 
-
 /* 
  get rid of padding & sizing on body so
  header is at top
 */
 
+body {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
 
 /* add some padding back to rest of page */
 
+main {
+    padding: 2vw;
+}
 
 /* navbar */
 
