@@ -2,7 +2,7 @@
 
 html {
     scroll-behavior: smooth;
-    
+
 }
 
 /* 
@@ -11,9 +11,9 @@ html {
 */
 
 body {
-box-sizing: border-box;
-padding: 0;
-margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 /* add some padding back to rest of page */
@@ -23,14 +23,43 @@ main {
 }
 
 /* navbar */
-
+.navbar {
+    background: linear-gradient(to left, #001266, #7387e6);
+    color: #BB9C3E;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+    font-weight: bold;
+    border: solid #f5c229d7;
+    padding: 1rem;
+}
 
 
 /* logo */
 
+.logo {
+    display: flex;
+    align-items: center;
 
+}
+
+.logo img {
+    height: 8vw;
+    width: 8vw;
+}
+
+.logo h1 {
+    font-size: 2.6rem;
+}
 
 /* navigation list */
+
+.navbar-links li {
+    list-style: none;
+    
+    padding: .2em 0;
+}
 
 
 /*  
@@ -38,12 +67,43 @@ main {
  and then on hover
 */
 
+.navbar-links a {
+    color: #f5c229d7;
+    background-color: #002966;
+    font-size: 1.5rem;
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+    border: solid #f5c229d7;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, #181a20, #1d328fd7);
+    display: inline-block;
+}
 
+.navbar-links a:hover,
+.navbar-links a:focus {
+    filter: invert(1);
+    background-color: ;
+
+}
 
 
 
 /* 
 media query for non-mobile nav bar
 min-width set to width of nav elements 
-such that no text wraps 
-*/
+such that no text wraps  */
+
+
+@media screen and (min-width: 60rem) {
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
